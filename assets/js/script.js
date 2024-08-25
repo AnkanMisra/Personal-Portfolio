@@ -1,15 +1,12 @@
 'use strict';
 
-// Element toggle function
 const elementToggleFunc = (elem) => elem.classList.toggle("active");
 
-// Sidebar functionality
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 sidebarBtn.addEventListener("click", () => elementToggleFunc(sidebar));
 
-// Testimonials modal functionality
 const testimonialsItems = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
@@ -36,7 +33,6 @@ testimonialsItems.forEach(item => {
 modalCloseBtn.addEventListener("click", toggleModal);
 overlay.addEventListener("click", toggleModal);
 
-// Custom select functionality
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-select-value]");
@@ -53,7 +49,6 @@ selectItems.forEach(item => {
   });
 });
 
-// Filter functionality
 const filterItems = (selectedValue) => {
   const filterItems = document.querySelectorAll("[data-filter-item]");
 
@@ -80,7 +75,6 @@ filterBtn.forEach(btn => {
   });
 });
 
-// Contact form validation
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
@@ -95,7 +89,6 @@ formInputs.forEach(input => {
   });
 });
 
-// Page navigation functionality
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
