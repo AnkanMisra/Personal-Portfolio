@@ -265,6 +265,9 @@ article.active {
   cursor: pointer;
   z-index: 1;
 }
+.contact-info {
+  font-size: 12px;
+}
 
 .content-card::before {
   content: "";
